@@ -210,6 +210,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun isAndroid12() = Build.VERSION.SDK_INT >= Build.VERSION_CODES.S
+    private fun isAndroid13() = Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU
 
     private fun hasPermission(permission: String) =
         checkSelfPermission(permission) == PackageManager.PERMISSION_GRANTED
